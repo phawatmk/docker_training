@@ -35,7 +35,7 @@ After docker images was pull check docker images by run this command.<br />
 ```
 sudo docker images
 ```
-___________________________pull_images.png____________________________________.<br />
+![alt text](https://github.com/phawatmk/docker_training/blob/main/images/pull_images.png) <br /><br />
 
 ## Run docker images
 Run docker images in this project is jupyter notebook.<br />
@@ -48,11 +48,11 @@ After run docker images.Run this command to check docker images run.<br />
 ```
 sudo docker ps
 ```
-___________________________run_docker_images.png____________________________________.<br />
+![alt text](https://github.com/phawatmk/docker_training/blob/main/images/run_docker_images.png) <br /><br />
 
 Open web browser and go to link ```http://{YOUR HOST}:10000``` to access ```JupyterLab``` .<br />
 
-___________________________jupyter_lab_1.png____________________________________.<br />
+![alt text](https://github.com/phawatmk/docker_training/blob/main/images/jupyter_lab_1.png) <br /><br />
 
 Stop jupyter images for next step.<br />
 
@@ -60,7 +60,7 @@ Stop jupyter images for next step.<br />
 sudo docker stop {CONTAINER_ID}
 ```
 
-___________________________stop_docker_images.png____________________________________.<br />
+![alt text](https://github.com/phawatmk/docker_training/blob/main/images/stop_docker_images.png) <br /><br />
 
 ## Run docker compose
 Previous step is running docker image by command. In this step run docker by docker compose.<br />
@@ -80,6 +80,13 @@ Check docker images run.<br />
 ```
 sudo docker ps
 ```
-__________________________run_docker_compose_1.png_____________________________.<br />
+![alt text](https://github.com/phawatmk/docker_training/blob/main/images/run_docker_compose_1.png) <br /><br />
 
 Go to link ```http://{YOUR HOST}:10000``` to access ```JupyterLab``` again .<br />
+
+Download jupyter notebook by run this command
+```
+wget -O docker-compose.yml https://raw.githubusercontent.com/phawatmk/docker_training/refs/heads/main/docker-compose-1.yml
+```
+
+## Revise docker image
