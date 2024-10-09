@@ -141,6 +141,40 @@ Stop container and run container with new images.<br />
 sudo docker compose down
 sudo docker compose up -d
 ```
-
+![alt text](https://github.com/phawatmk/docker_training/blob/main/images/stop_and_run_container.png) <br /><br />
 Go to JupyterLab. Access to ```work``` folder and open ```notebook.ipynb``` file.<br />
 Run first cell again and you will not get error.<br />
+
+## Add service to container
+Add postgresql to same container by edit ```docker-compose.yml```. <br />
+Download ```docker-compose-3.yml``` file which add postgres to container.<br />
+
+```
+wget -O docker-compose.yml https://raw.githubusercontent.com/phawatmk/docker_training/refs/heads/main/docker-compose-3.yml
+```
+In this ```docker-compose.yml```.Postgres was added to this container.<br />
+```
+  postgres:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: docker
+      POSTGRES_PASSWORD: docker
+      POSTGRES_DB: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./postgres-db-volume:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "postgres"]
+      interval: 10s
+      retries: 5
+      start_period: 5s
+    restart: always
+```
+
+Stop container and run new container.<br />
+```
+sudo docker compose down
+sudo docker compose up -d
+```
+
