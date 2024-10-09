@@ -35,7 +35,7 @@ After docker images was pull check docker images by run this command.<br />
 ```
 sudo docker images
 ```
-___________________________picture____________________________________.<br />
+___________________________pull_images.png____________________________________.<br />
 
 ## Run docker images
 Run docker images in this project is jupyter notebook.<br />
@@ -48,3 +48,21 @@ After run docker images.Run this command to check docker images run.<br />
 ```
 sudo docker ps
 ```
+___________________________run_docker_images.png____________________________________.<br />
+
+Open web browser and go to link ```http://{YOUR HOST}:10000``` to access ```JupyterLab``` .<br />
+
+___________________________jupyter_lab_1.png____________________________________.<br />
+
+Stop jupyter images for next step.<br />
+
+```
+sudo docker stop {CONTAINER_ID}
+```
+
+___________________________stop_docker_images.png____________________________________.<br />
+
+## Run docker compose
+Previous step is running docker image by command. In this step run docker by docker compose.<br />
+
+wget -O dockdocker-compose.yml https://raw.githubusercontent.com/phawatmk/airflow_training/main/phawatmk_dag.py
