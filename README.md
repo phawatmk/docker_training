@@ -200,4 +200,5 @@ Query to check data.<br />
 ```
 select * from customer_detail limit 10;
 ```
-Result will be shown like this :<br />
+Result will be shown like this :<br /><br />
+![alt text](https://github.com/phawatmk/docker_training/blob/main/images/docker_exec.png) <br /><br />
