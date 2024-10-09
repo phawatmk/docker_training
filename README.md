@@ -182,3 +182,22 @@ sudo docker compose up -d
 ## Execute inside to contianer
 Go to JupyterLab. Access to ```work``` folder and open ```notebook.ipynb``` file.<br />
 Run all cell until last cell shown as picture below.<br />
+
+![alt text](https://github.com/phawatmk/docker_training/blob/main/images/run_notebook_success.png) <br /><br />
+
+Excute to postgres container to check data by run this command.<br />
+```
+sudo docker exec -it docker-postgres-1 /bin/bash
+```
+
+After execute to container run psql command to access psql cli.<br />
+
+```
+psql -d postgres -U docker
+```
+
+Query to check data.<br />
+```
+select * from customer_detail limit 10;
+```
+Result will be shown like this :<br />
