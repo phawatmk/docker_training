@@ -64,5 +64,8 @@ ___________________________stop_docker_images.png_______________________________
 
 ## Run docker compose
 Previous step is running docker image by command. In this step run docker by docker compose.<br />
+Download ```docker-compose-1.yml``` file.<br />
 
-wget -O dockdocker-compose.yml https://raw.githubusercontent.com/phawatmk/airflow_training/main/phawatmk_dag.py
+```
+wget -O dockdocker-compose.yml https://raw.githubusercontent.com/phawatmk/docker_training/refs/heads/main/docker-compose-1.yml
+```
