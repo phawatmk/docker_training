@@ -129,3 +129,18 @@ Download ```docker-compose-2.yml``` file which run with new image.<br />
 ```
 wget -O docker-compose.yml https://raw.githubusercontent.com/phawatmk/docker_training/refs/heads/main/docker-compose-2.yml
 ```
+
+Image will be change to myapp:latest as we built before.<br />
+```
+services:
+  jupyter:
+    image: myapp:latest
+```
+Stop container and run container with new images.<br />
+```
+sudo docker compose down
+sudo docker compose up -d
+```
+
+Go to JupyterLab. Access to ```work``` folder and open ```notebook.ipynb``` file.<br />
+Run first cell again and you will not get error.<br />
