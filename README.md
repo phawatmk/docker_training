@@ -84,9 +84,15 @@ sudo docker ps
 
 Go to link ```http://{YOUR HOST}:10000``` to access ```JupyterLab``` again .<br />
 
-Download jupyter notebook by run this command
+Download jupyter notebook by run this command.<br />
 ```
-wget -O docker-compose.yml https://raw.githubusercontent.com/phawatmk/docker_training/refs/heads/main/docker-compose-1.yml
+sudo chown {user}:{user} notebooks
+wget -O notebooks/notebook.ipynb https://raw.githubusercontent.com/phawatmk/docker_training/refs/heads/main/notebook.ipynb
 ```
+
+In JupyterLab. Access to ```work``` folder and open ```notebook.ipynb``` file.<br />
+Run first cell and you will get error.<br />
+![alt text](https://github.com/phawatmk/docker_training/blob/main/images/notebook_error.png) <br /><br />
+To install additional python libary.Docker image will be revised.<br />
 
 ## Revise docker image
