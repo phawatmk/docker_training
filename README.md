@@ -100,5 +100,20 @@ Revised image by create new image from image ```jupyter/scipy-notebook```.<br />
 Download ```Dockerfile``` by run this command.<br />
 
 ```
-wget -O notebooks/notebook.ipynb https://raw.githubusercontent.com/phawatmk/docker_training/refs/heads/main/notebook.ipynb
+wget -O Dockerfile https://raw.githubusercontent.com/phawatmk/docker_training/refs/heads/main/Dockerfile
+```
+Dockerfile is use image ```jupyter/scipy-notebook``` and install more python libraries ```Faker``` and ```psycopg2-binary```.<br />
+
+```
+# Start from a core stack version
+FROM jupyter/scipy-notebook:latest
+RUN pip install --quiet --no-cache-dir 'Faker==30.1.0' && \
+    pip install 'psycopg2-binary' && \
+    fix-permissions "${CONDA_DIR}" && \
+    fix-permissions "/home/${NB_USER}"
+```
+
+Build new image on local by run this command.<br />
+```
+sudo docker build -t myapp:latest .
 ```
