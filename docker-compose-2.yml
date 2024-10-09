@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  jupyter:
+    image: myapp:latest
+    ports:
+      - "10000:8888"
+    volumes:
+      - ./notebooks:/home/jovyan/work
+    command: "start-notebook.sh --NotebookApp.token=''"
