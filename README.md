@@ -177,4 +177,8 @@ Stop container and run new container.<br />
 sudo docker compose down
 sudo docker compose up -d
 ```
+![alt text](https://github.com/phawatmk/docker_training/blob/main/images/run_new_container.png) <br /><br />
 
+## Execute inside to contianer
+Go to JupyterLab. Access to ```work``` folder and open ```notebook.ipynb``` file.<br />
+Run all cell until last cell shown as picture below.<br />
