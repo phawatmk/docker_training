@@ -96,3 +96,9 @@ Run first cell and you will get error.<br />
 To install additional python libary.Docker image will be revised.<br />
 
 ## Revise docker image
+Revised image by create new image from image ```jupyter/scipy-notebook```.<br />
+Download ```Dockerfile``` by run this command.<br />
+
+```
+wget -O notebooks/notebook.ipynb https://raw.githubusercontent.com/phawatmk/docker_training/refs/heads/main/notebook.ipynb
+```
