@@ -67,5 +67,19 @@ Previous step is running docker image by command. In this step run docker by doc
 Download ```docker-compose-1.yml``` file.<br />
 
 ```
-wget -O dockdocker-compose.yml https://raw.githubusercontent.com/phawatmk/docker_training/refs/heads/main/docker-compose-1.yml
+wget -O docker-compose.yml https://raw.githubusercontent.com/phawatmk/docker_training/refs/heads/main/docker-compose-1.yml
 ```
+
+Run docker compose.<br />
+
+```
+sudo docker-compose up -d
+```
+
+Check docker images run.<br />
+```
+sudo docker ps
+```
+__________________________run_docker_compose_1.png_____________________________.<br />
+
+Go to link ```http://{YOUR HOST}:10000``` to access ```JupyterLab``` again .<br />
