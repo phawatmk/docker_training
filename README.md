@@ -36,3 +36,15 @@ After docker images was pull check docker images by run this command.<br />
 sudo docker images
 ```
 ___________________________picture____________________________________.<br />
+
+## Run docker images
+Run docker images in this project is jupyter notebook.<br />
+
+```
+sudo docker run -d -p 10000:8888 jupyter/scipy-notebook start-notebook.sh --NotebookApp.token=''
+```
+
+After run docker images.Run this command to check docker images run.<br />
+```
+sudo docker ps
+```
