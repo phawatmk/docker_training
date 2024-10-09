@@ -117,3 +117,15 @@ Build new image on local by run this command.<br />
 ```
 sudo docker build -t myapp:latest .
 ```
+After build new image. Run this command to check new image.<br />
+```
+sudo docker images
+```
+
+![alt text](https://github.com/phawatmk/docker_training/blob/main/images/build_new_image.png) <br /><br />
+
+Download ```docker-compose-2.yml``` file which run with new image.<br />
+
+```
+wget -O docker-compose.yml https://raw.githubusercontent.com/phawatmk/docker_training/refs/heads/main/docker-compose-2.yml
+```
