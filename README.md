@@ -73,7 +73,7 @@ wget -O docker-compose.yml https://raw.githubusercontent.com/phawatmk/docker_tra
 Run docker compose.<br />
 
 ```
-sudo docker-compose up -d
+sudo docker compose up -d
 ```
 
 Check docker images run.<br />
